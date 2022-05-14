@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.Objects;
 @Controller
 public class LoginController {
-   @RequestMapping( value = "login",method = RequestMethod.POST  )
+    @RequestMapping( value = "login_a",method = {RequestMethod.POST} )
     public void doLogin(HttpServletRequest request ,HttpServletResponse response) throws IOException, ServletException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
